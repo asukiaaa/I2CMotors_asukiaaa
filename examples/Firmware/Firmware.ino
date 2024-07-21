@@ -64,7 +64,6 @@ void setup() {
 #ifdef DEVICE_ADDRESS
   uint8_t address = DEVICE_ADDRESS;
 #else
-  uint8_t address = 0;
   for (int i = 0; i < 8; ++i) {
     pinMode(addrPins[i], INPUT_PULLUP);
   }
